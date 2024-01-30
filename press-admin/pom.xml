@@ -3,16 +3,17 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.2.2</version>
+		<groupId>com.example</groupId>
+		<artifactId>SpringPressSystem</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example</groupId>
+
 	<artifactId>press-admin</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>press-admin</name>
 	<description>press-admin</description>
+	<packaging>jar</packaging>
 	<properties>
 		<java.version>17</java.version>
 		<spring-boot-admin.version>3.2.1</spring-boot-admin.version>
@@ -25,6 +26,23 @@
 		<dependency>
 			<groupId>de.codecentric</groupId>
 			<artifactId>spring-boot-admin-starter-server</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>de.codecentric</groupId>
+			<artifactId>spring-boot-admin-server-ui</artifactId>
+		</dependency>
+
+		<!-- 注册进nacos -->
+		<dependency>
+			<groupId>com.alibaba.cloud</groupId>
+			<artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.alibaba.csp</groupId>
+			<artifactId>sentinel-core</artifactId>
+			<version>1.8.6</version>
 		</dependency>
 
 		<dependency>
