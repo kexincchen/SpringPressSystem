@@ -9,22 +9,13 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>SpringPressSystem</artifactId>
+    <artifactId>press-service-api</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>SpringPressSystem</name>
-    <description>SpringPressSystem</description>
-    <packaging>pom</packaging>
+    <name>press-resource</name>
+    <description>press-resource</description>
     <properties>
         <java.version>17</java.version>
-        <spring-cloud.version>2023.0.0</spring-cloud.version>
-        <spring-cloud-alibaba.version>2022.0.0.0</spring-cloud-alibaba.version>
-        <spring-boot-admin.version>3.2.1</spring-boot-admin.version>
     </properties>
-
-    <modules>
-        <module>press-admin</module>
-        <module>press-service</module>
-    </modules>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -37,27 +28,6 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-dependencies</artifactId>
-                <version>${spring-cloud.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-
-            <dependency>
-                <groupId>com.alibaba.cloud</groupId>
-                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
-                <version>${spring-cloud-alibaba.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-
-        </dependencies>
-    </dependencyManagement>
 
     <build>
         <plugins>
