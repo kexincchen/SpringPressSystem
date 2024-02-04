@@ -1,5 +1,6 @@
 package com.example.pressad.service;
 
+import com.example.pressresource.entity.Advertisement;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
