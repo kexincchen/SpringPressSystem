@@ -25,6 +25,7 @@
     <modules>
         <module>press-admin</module>
         <module>press-service</module>
+        <module>press-gateway</module>
     </modules>
     <dependencies>
         <dependency>
